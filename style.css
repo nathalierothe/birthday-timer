@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(135deg, #2c003e, #5e0087);
+  color: #fff;
+  font-family: "Creepster", cursive; /* Use spooky font from Google Fonts */
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7;
+  animation: glow 2s infinite alternate;
+}
+
+#countdown {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+}
+
+.emotes {
+  margin-top: 20px;
+  font-size: 2rem;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7;
+  }
+  to {
+    text-shadow: 0 0 20px #f1c40f, 0 0 30px #f1c40f, 0 0 40px #f1c40f;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
